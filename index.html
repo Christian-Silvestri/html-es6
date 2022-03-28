@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title>HTML-Esercizio 6</title>
+</head>
+
+<body>
+    <from action="/" method="post">
+
+        <!--Input numerico, con relativa label, nel range 0-100 e con step 2
+        l'input numerico deve avere il focus all'apertura della pagina-->
+        <div>
+            <label for="num">INPUT NUMERICO</label>
+            <input type="number" name="even_number" id="num" min="0" max="100" step="2" autofocus/>
+        </div>
+
+
+        <!--Input per date con una proprietà custom-->
+        <input type="date" min="2022-03-28" max="2023-03-28" data-prop="custom" />
+        
+        
+        <!--Checkbox con relativa label
+        La checkbox deve essere gia selezionata all'apertura della pagina -->
+        <div>
+            <label for="box">I AGREE</label>
+            <input type="checkbox" id="box" name="checkbox" value="confirm" checked/>
+        </div>
+
+        <!--Pulsante disabilitato-->
+        <input type="submit" value="PROSEGUI" disabled/>
+    </from>
+</body>
+
+</html>
